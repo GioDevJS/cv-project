@@ -1,0 +1,31 @@
+version: '3.9'
+
+services:
+  frontend:
+    image: yourdockerhubuser/cv-frontend:latest
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    env_file:
+      - .env
+
+  backend:
+    image: yourdockerhubuser/cv-backend:latest
+    ports:
+      - "5000:5000"
+    depends_on:
+      - postgres
+    env_file:
+      - .env
+
+  postgres:
+    image: postgres:15
+    restart: always
+    env_file:
+      - .env
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
