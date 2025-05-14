@@ -31,11 +31,11 @@ prod:
 # Build and push backend to Docker Hub
 push-backend:
 	@echo "📤 Building and pushing backend..."
-	docker build -t yourdockerhubuser/cv-backend:latest ./backend
-	docker push yourdockerhubuser/cv-backend:latest
+	docker build -t giodev68/cv-backend:latest ./backend
+	docker push giodev68/cv-backend:latest
 
 # Build and push frontend to Docker Hub
 push-frontend:
 	@echo "📤 Building and pushing frontend..."
-	docker build -t yourdockerhubuser/cv-frontend:latest ./frontend
-	docker push yourdockerhubuser/cv-frontend:latest
+	docker build -t giodev68/cv-frontend:latest ./frontend
+	docker push giodev68/cv-frontend:latest

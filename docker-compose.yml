@@ -2,7 +2,7 @@ version: '3.9'
 
 services:
   frontend:
-    image: yourdockerhubuser/cv-frontend:latest
+    image: giodev68/cv-frontend:latest
     ports:
       - "3000:3000"
     depends_on:
@@ -11,7 +11,7 @@ services:
       - .env
 
   backend:
-    image: yourdockerhubuser/cv-backend:latest
+    image: giodev68/cv-backend:latest
     ports:
       - "5000:5000"
     depends_on:
