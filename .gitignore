@@ -20,7 +20,7 @@ yarn-error.log*
 # Docker
 *.tgz
 .dockerignore
-Dockerfile*
+/Dockerfile*
 
 # OS
 .DS_Store
