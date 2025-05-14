@@ -1,5 +1,4 @@
-version: '3.9'
-
+# Docker Compose file for CV project
 services:
   frontend:
     image: giodev68/cv-frontend:latest
